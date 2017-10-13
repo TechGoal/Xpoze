@@ -1,0 +1,134 @@
+/*  Color Scheme
+********************/
+/*  Fonts
+********************/
+* {
+  font-weight: normal; }
+
+body {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  background-color: #090809;
+  color: #0173BC; }
+
+.landing-screen {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed; }
+
+.logo {
+  width: 10%; }
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #013F67 50%, #012A45 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: .5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1; }
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s; }
+
+.bg3 {
+  animation-duration: 5s; }
+
+.content {
+  background-color: white; }
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%); }
+  100% {
+    transform: translateX(25%); } }
+section {
+  height: 100vh; }
+
+.an {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: .5em;
+  display: inline-block;
+  color: white;
+  width: 40em; }
+  .an .subtitle {
+    font-size: 1em; }
+  .an .title {
+    font: 900 4em/1 "Titillium Web", sans-serif;
+    letter-spacing: 0.2em;
+    padding-bottom: 20px;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+    /* Clip Background Image */
+    background: url(../images/animated_text_fill.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transform: translateX(-25%);
+    /* Animate Background Image */
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+    /* Activate hardware acceleration for smoother animations */
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden; }
+
+.an-n {
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: .5em;
+  color: white; }
+  .an-n .title-n {
+    font: 900 2em "Titillium Web", sans-serif;
+    letter-spacing: 0.2em;
+    display: block;
+    text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+    /* Clip Background Image */
+    background: url(../images/animated_text_fill-n.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transform: translateX(-25%);
+    /* Animate Background Image */
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+    /* Activate hardware acceleration for smoother animations */
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden; }
+  .an-n .title-n:before {
+    content: url(../images/logo_bnw.png); }
+
+/* Animate Background Image */
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%; }
+  100% {
+    background-position: 100% 50%; } }
+::selection {
+  background-color: skyblue; }
+
+/* Bootstrap
+**************************/
+nav {
+  background: #1e3c72;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2a5298, #1e3c72);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+.navbar-toggler, .navbar-toggler:hover, .navbar-toggler:active, .navbar-toggler:focus {
+  border: none; }
+
+/* Media Queries
+**************************/
+@media only screen and (max-width: 650px) {
+  .an {
+    letter-spacing: 0.2em; }
+    .an .subtitle {
+      font-size: 0.8em; } }
+
+/*# sourceMappingURL=style.css.map */
