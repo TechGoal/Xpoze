@@ -98,8 +98,6 @@ section {
     /* Activate hardware acceleration for smoother animations */
     -webkit-transform: translate3d(0, 0, 0);
     -webkit-backface-visibility: hidden; }
-  .an-n .title-n:before {
-    content: url(../images/logo_bnw.png); }
 
 /* Animate Background Image */
 @-webkit-keyframes aitf {
