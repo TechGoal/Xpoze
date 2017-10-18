@@ -175,11 +175,56 @@ footer {
         text-align: center;
         transition: 0.2s ease-out;
     }
-    
+
     .social:hover {
         color: #d0d0d0;
     }
 }
+
+.icon-panel {
+    position: fixed;
+    bottom: 00px;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: inline;
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    span {
+        color: $white;
+        text-align: center;
+    }
+
+    .icon-panel-ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: block;
+        margin: 0 auto;
+
+        li {
+            display: inline-block;
+        }
+
+        li {
+            padding: 0 10px;
+        }
+
+        a {
+            color: $white;
+            text-transform: lowercase;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    }
+}
+
 
 /* Animate Background Image */
 
@@ -220,7 +265,7 @@ nav {
     background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);
     background: linear-gradient(to right, #2a5298, #1e3c72);
     text-align: center;
-    
+
     .nav-link {
         font-size: 0.8em;
         text-transform: lowercase;
@@ -251,8 +296,16 @@ nav {
     .camera {
         padding-right: 0;
     }
-    
+
     footer {
         text-align: center;
+    }
+
+    .icon-panel {
+        position: fixed;
+        bottom: -70px;
+        
+        text-align: center;
+        display: block;
     }
 }

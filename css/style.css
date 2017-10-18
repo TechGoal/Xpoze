@@ -129,6 +129,35 @@ footer {
   footer .social:hover {
     color: #d0d0d0; }
 
+.icon-panel {
+  position: fixed;
+  bottom: 00px;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: inline; }
+  .icon-panel img {
+    display: block;
+    margin: 0 auto; }
+  .icon-panel span {
+    color: #FCF7F8;
+    text-align: center; }
+  .icon-panel .icon-panel-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    margin: 0 auto; }
+    .icon-panel .icon-panel-ul li {
+      display: inline-block; }
+    .icon-panel .icon-panel-ul li {
+      padding: 0 10px; }
+    .icon-panel .icon-panel-ul a {
+      color: #FCF7F8;
+      text-transform: lowercase; }
+    .icon-panel .icon-panel-ul a:hover {
+      text-decoration: none; }
+
 /* Animate Background Image */
 @-webkit-keyframes aitf {
   0% {
@@ -182,6 +211,12 @@ nav {
     padding-right: 0; }
 
   footer {
-    text-align: center; } }
+    text-align: center; }
+
+  .icon-panel {
+    position: fixed;
+    bottom: -70px;
+    text-align: center;
+    display: block; } }
 
 /*# sourceMappingURL=style.css.map */
