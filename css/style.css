@@ -9,7 +9,8 @@ body {
   font-family: "Titillium Web", sans-serif;
   font-weight: 400;
   background-color: #090809;
-  color: #0173BC; }
+  background-image: url(../images/path30.png);
+  color: #FCF7F8; }
 
 .landing-screen {
   top: 50%;
@@ -39,7 +40,11 @@ body {
   animation-duration: 5s; }
 
 .content {
-  background-color: white; }
+  color: #FCF7F8;
+  padding-top: 8em; }
+
+.center {
+  text-align: center; }
 
 @keyframes slide {
   0% {
@@ -103,6 +108,27 @@ section {
   height: 100%;
   padding-right: 50px; }
 
+.nav-icon-item {
+  height: 50px;
+  padding: 0 4px 5px; }
+
+footer {
+  margin-top: 50px;
+  background: #1e3c72;
+  background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);
+  background: linear-gradient(to right, #2a5298, #1e3c72);
+  padding: 20px 0;
+  font-family: "Nunito", sans-serif;
+  text-align: right; }
+  footer .social {
+    color: #FCF7F8;
+    border: none;
+    outline: none;
+    text-align: center;
+    transition: 0.2s ease-out; }
+  footer .social:hover {
+    color: #d0d0d0; }
+
 /* Animate Background Image */
 @-webkit-keyframes aitf {
   0% {
@@ -110,17 +136,33 @@ section {
   100% {
     background-position: 100% 50%; } }
 ::selection {
-  background-color: skyblue; }
+  background-color: #1e3c72; }
+
+::-webkit-scrollbar {
+  width: 0.7em; }
+
+::-webkit-scrollbar-track {
+  background-color: #1d1d1d; }
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #d0d0d0; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #FCF7F8; }
 
 /* Bootstrap
 **************************/
 nav {
   background: #1e3c72;
-  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2a5298, #1e3c72);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  text-align: center; }
+  nav .nav-link {
+    font-size: 0.8em;
+    text-transform: lowercase; }
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url(../images/menu.svg); }
 
 .navbar-toggler,
 .navbar-toggler:hover,
@@ -137,6 +179,9 @@ nav {
       font-size: 0.8em; }
 
   .camera {
-    padding-right: 0; } }
+    padding-right: 0; }
+
+  footer {
+    text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */

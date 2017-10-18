@@ -1,7 +1,7 @@
 /*  Color Scheme
 ********************/
 
-$blue: #0173BC;
+$blue: #1e3c72;
 $green: #9FD356;
 $lgreen: #B5D6B2;
 $white: #FCF7F8;
@@ -23,7 +23,8 @@ body {
     font-family: $tit;
     font-weight: 400;
     background-color: $black;
-    color: $blue;
+    background-image: url(../images/path30.png);
+    color: $white;
 }
 
 .landing-screen {
@@ -59,7 +60,12 @@ body {
 }
 
 .content {
-    background-color: white;
+    color: $white;
+    padding-top: 8em;
+}
+
+.center {
+    text-align: center;
 }
 
 @keyframes slide {
@@ -148,6 +154,33 @@ section {
     padding-right: 50px;
 }
 
+.nav-icon-item {
+    height: 50px;
+    padding: 0 4px 5px;
+}
+
+footer {
+    margin-top: 50px;
+    background: #1e3c72;
+    background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);
+    background: linear-gradient(to right, #2a5298, #1e3c72);
+    padding: 20px 0;
+    font-family: $nun;
+    text-align: right;
+
+    .social {
+        color: $white;
+        border: none;
+        outline: none;
+        text-align: center;
+        transition: 0.2s ease-out;
+    }
+    
+    .social:hover {
+        color: #d0d0d0;
+    }
+}
+
 /* Animate Background Image */
 
 @-webkit-keyframes aitf {
@@ -160,7 +193,23 @@ section {
 }
 
 ::selection {
-    background-color: skyblue;
+    background-color: $blue;
+}
+
+::-webkit-scrollbar {
+    width: 0.7em;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #1d1d1d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #d0d0d0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $white;
 }
 
 /* Bootstrap
@@ -168,11 +217,18 @@ section {
 
 nav {
     background: #1e3c72;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2a5298, #1e3c72);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+    
+    .nav-link {
+        font-size: 0.8em;
+        text-transform: lowercase;
+    }
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url(../images/menu.svg);
 }
 
 .navbar-toggler,
@@ -194,5 +250,9 @@ nav {
     }
     .camera {
         padding-right: 0;
+    }
+    
+    footer {
+        text-align: center;
     }
 }
