@@ -114,9 +114,9 @@ section {
 
 footer {
   margin-top: 50px;
-  background: #1e3c72;
-  background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);
-  background: linear-gradient(to right, #2a5298, #1e3c72);
+  background: #0169AB;
+  background: -webkit-linear-gradient(to right, #0173BC, #0169AB);
+  background: linear-gradient(to right, #0173BC, #0169AB);
   padding: 20px 0;
   font-family: "Nunito", sans-serif;
   text-align: right; }
@@ -182,9 +182,9 @@ footer {
 /* Bootstrap
 **************************/
 nav {
-  background: #1e3c72;
-  background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);
-  background: linear-gradient(to right, #2a5298, #1e3c72);
+  background: #0169AB;
+  background: -webkit-linear-gradient(to right, #0173BC, #0169AB);
+  background: linear-gradient(to right, #0173BC, #0169AB);
   text-align: center; }
   nav .nav-link {
     font-size: 0.8em;
