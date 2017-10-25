@@ -5,12 +5,22 @@
 * {
   font-weight: normal; }
 
+html,
+body {
+  height: 100%; }
+
+.content {
+  min-height: 90%; }
+
 body {
   font-family: "Titillium Web", sans-serif;
   font-weight: 400;
   background-color: #090809;
   background-image: url(../images/path30.png);
   color: #FCF7F8; }
+
+p {
+  text-align: justify; }
 
 .landing-screen {
   top: 50%;
@@ -41,7 +51,11 @@ body {
 
 .content {
   color: #FCF7F8;
-  padding-top: 8em; }
+  padding-top: 10em; }
+
+.content:after {
+  content: "";
+  display: block; }
 
 .center {
   text-align: center; }
@@ -118,7 +132,7 @@ footer {
   background: -webkit-linear-gradient(to right, #0173BC, #0169AB);
   background: linear-gradient(to right, #0173BC, #0169AB);
   padding: 20px 0;
-  font-family: "Nunito", sans-serif;
+  font-family: "Playfair Display", serif;
   text-align: right; }
   footer .social {
     color: #FCF7F8;
@@ -157,6 +171,9 @@ footer {
       text-transform: lowercase; }
     .icon-panel .icon-panel-ul a:hover {
       text-decoration: none; }
+
+h1 {
+  font-family: "Playfair Display", serif; }
 
 /* Animate Background Image */
 @-webkit-keyframes aitf {
@@ -217,6 +234,19 @@ nav {
     position: fixed;
     bottom: -70px;
     text-align: center;
-    display: block; } }
+    display: block; }
+
+  .nav-list {
+    display: none; }
+
+  nav {
+    text-align: left; }
+
+  .nav-icon-item {
+    margin-right: 10px; }
+
+  .content {
+    color: #FCF7F8;
+    padding-top: 6.5em; } }
 
 /*# sourceMappingURL=style.css.map */
