@@ -68,10 +68,13 @@ p {
 section {
   height: 100vh; }
 
+.subtitle-p {
+  text-align: center;
+  letter-spacing: 0.2em; }
+
 .an {
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: .5em;
   display: inline-block;
   color: white;
   width: 40em; }
@@ -79,11 +82,9 @@ section {
     font-size: 1em; }
   .an .title {
     font: 900 4em/1 "Titillium Web", sans-serif;
-    letter-spacing: 0.2em;
-    padding-bottom: 20px;
     display: block;
-    margin: 0 auto;
     text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+    text-align: center;
     /* Clip Background Image */
     background: url(../images/animated_text_fill.png) repeat-y;
     -webkit-background-clip: text;
@@ -145,11 +146,11 @@ footer {
 
 .icon-panel {
   position: fixed;
-  bottom: 00px;
-  left: 50vw;
-  transform: translate(-50%, -50%);
+  bottom: 50px;
+  margin: 0 auto;
   text-align: center;
-  display: inline; }
+  display: inline;
+  width: 100%; }
   .icon-panel img {
     display: block;
     margin: 0 auto; }
@@ -160,16 +161,41 @@ footer {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: block;
+    display: inline;
     margin: 0 auto; }
     .icon-panel .icon-panel-ul li {
-      display: inline-block; }
-    .icon-panel .icon-panel-ul li {
+      display: inline-block;
       padding: 0 10px; }
     .icon-panel .icon-panel-ul a {
       color: #FCF7F8;
       text-transform: lowercase; }
     .icon-panel .icon-panel-ul a:hover {
+      text-decoration: none; }
+
+.icon-panel-mobile {
+  position: fixed;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  display: none; }
+  .icon-panel-mobile img {
+    display: block;
+    margin: 0 auto; }
+  .icon-panel-mobile span {
+    color: #FCF7F8;
+    text-align: center; }
+  .icon-panel-mobile .icon-panel-ul-mobile {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin: 0 auto; }
+    .icon-panel-mobile .icon-panel-ul-mobile li {
+      display: inline-block;
+      padding: 0 7px; }
+    .icon-panel-mobile .icon-panel-ul-mobile a {
+      color: #FCF7F8;
+      text-transform: lowercase; }
+    .icon-panel-mobile .icon-panel-ul-mobile a:hover {
       text-decoration: none; }
 
 h1 {
@@ -231,12 +257,7 @@ nav {
     text-align: center; }
 
   .icon-panel {
-    position: fixed;
-    bottom: -70px;
-    text-align: center;
-    display: block;
-    margin: 0 1px;
-    left: none; }
+    display: none; }
 
   .nav-list {
     display: none; }
@@ -249,6 +270,9 @@ nav {
 
   .content {
     color: #FCF7F8;
-    padding-top: 6.5em; } }
+    padding-top: 6.5em; }
+
+  .icon-panel-mobile {
+    display: inline; } }
 
 /*# sourceMappingURL=style.css.map */
