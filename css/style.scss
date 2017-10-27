@@ -75,7 +75,7 @@ p {
 
 .content {
     color: $white;
-    padding-top: 10em;
+    padding-top: 8em;
 }
 
 .content:after {
@@ -199,7 +199,7 @@ footer {
     .social:hover {
         color: #d0d0d0;
     }
-    
+
     .xpoze {
         text-align: right;
     }
@@ -348,6 +348,51 @@ nav {
     border: none;
 }
 
+.card {
+    background-color: $blue;
+    height: 20rem;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: overlay;
+    transition: all 0.25s ease-out;
+
+    .card-title {
+        font-family: $playfair;
+        font-weight: 700;
+    }
+
+    .card-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card:nth-of-type(1) {
+    background-image: url(../images/pre-wedding.jpg);
+}
+
+.card:nth-of-type(2) {
+    background-image: url(../images/pre-wedding.jpg);
+}
+
+.card:nth-of-type(3) {
+    background-image: url(../images/pre-wedding.jpg);
+}
+
+.card:nth-of-type(4) {
+    background-image: url(../images/pre-wedding.jpg);
+}
+
+.card:nth-of-type(5) {
+    background-image: url(../images/pre-wedding.jpg);
+}
+
 /* Media Queries
 **************************/
 
@@ -363,11 +408,11 @@ nav {
     }
 
     footer {
-            text-align: center;
+        text-align: center;
         .social {
             text-align: center;
         }
-        
+
         .xpoze {
             text-align: center;
         }

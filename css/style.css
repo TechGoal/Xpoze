@@ -51,7 +51,7 @@ p {
 
 .content {
   color: #FCF7F8;
-  padding-top: 10em; }
+  padding-top: 8em; }
 
 .content:after {
   content: "";
@@ -243,6 +243,40 @@ nav {
 .navbar-toggler:active,
 .navbar-toggler:focus {
   border: none; }
+
+.card {
+  background-color: #0169AB;
+  height: 20rem;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: overlay;
+  transition: all 0.25s ease-out; }
+  .card .card-title {
+    font-family: "Playfair Display", serif;
+    font-weight: 700; }
+  .card .card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.card:hover {
+  transform: scale(1.05); }
+
+.card:nth-of-type(1) {
+  background-image: url(../images/pre-wedding.jpg); }
+
+.card:nth-of-type(2) {
+  background-image: url(../images/pre-wedding.jpg); }
+
+.card:nth-of-type(3) {
+  background-image: url(../images/pre-wedding.jpg); }
+
+.card:nth-of-type(4) {
+  background-image: url(../images/pre-wedding.jpg); }
+
+.card:nth-of-type(5) {
+  background-image: url(../images/pre-wedding.jpg); }
 
 /* Media Queries
 **************************/
