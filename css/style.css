@@ -133,16 +133,18 @@ footer {
   background: -webkit-linear-gradient(to right, #0173BC, #0169AB);
   background: linear-gradient(to right, #0173BC, #0169AB);
   padding: 20px 0;
-  font-family: "Playfair Display", serif;
-  text-align: right; }
+  font-family: "Playfair Display", serif; }
   footer .social {
+    text-align: left;
     color: #FCF7F8;
+    padding: 0 10px;
     border: none;
     outline: none;
-    text-align: center;
     transition: 0.2s ease-out; }
   footer .social:hover {
     color: #d0d0d0; }
+  footer .xpoze {
+    text-align: right; }
 
 .icon-panel {
   position: fixed;
@@ -255,6 +257,10 @@ nav {
 
   footer {
     text-align: center; }
+    footer .social {
+      text-align: center; }
+    footer .xpoze {
+      text-align: center; }
 
   .icon-panel {
     display: none; }

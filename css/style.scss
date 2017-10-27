@@ -186,19 +186,22 @@ footer {
     background: linear-gradient(to right, #0173BC, #0169AB);
     padding: 20px 0;
     font-family: $playfair;
-    text-align: right;
-
 
     .social {
+        text-align: left;
         color: $white;
+        padding: 0 10px;
         border: none;
         outline: none;
-        text-align: center;
         transition: 0.2s ease-out;
     }
 
     .social:hover {
         color: #d0d0d0;
+    }
+    
+    .xpoze {
+        text-align: right;
     }
 }
 
@@ -360,7 +363,14 @@ nav {
     }
 
     footer {
-        text-align: center;
+            text-align: center;
+        .social {
+            text-align: center;
+        }
+        
+        .xpoze {
+            text-align: center;
+        }
     }
 
     .icon-panel {
