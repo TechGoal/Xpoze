@@ -244,39 +244,37 @@ nav {
 .navbar-toggler:focus {
   border: none; }
 
+.card-link,
 .card {
-  background-color: #0169AB;
-  height: 18rem;
-  background-size: cover;
-  background-position: center center;
-  background-blend-mode: screen;
-  transition: all 0.25s ease-out; }
-  .card .card-title {
-    font-family: "Playfair Display", serif;
-    font-weight: 700;
-    color: #0D1321;
-    text-align: center; }
-  .card .card-body {
-    position: absolute;
-    bottom: 0; }
+  text-decoration: none;
+  transition: 0.3s ease-out;
+  border: 0px;
+  border-radius: 0.75rem; }
 
+.card-img-top {
+  opacity: 0.8;
+  transition: 0.3s ease-out;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem; }
+
+.card-link:hover,
 .card:hover {
+  text-decoration: none;
   transform: scale(1.05); }
+  .card-link:hover .card-img-top,
+  .card:hover .card-img-top {
+    opacity: 1; }
 
-.card:nth-of-type(1) {
-  background-image: url(../images/pre-wedding.jpg); }
+.card-title {
+  color: #FCF7F8;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  margin: 0; }
 
-.card:nth-of-type(2) {
-  background-image: url(../images/candid.jpg); }
-
-.card:nth-of-type(3) {
-  background-image: url(../images/wedding.jpg); }
-
-.card:nth-of-type(4) {
-  background-image: url(../images/pre-wedding.jpg); }
-
-.card:nth-of-type(5) {
-  background-image: url(../images/pre-wedding.jpg); }
+.card-body {
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  background-color: #0169AB; }
 
 /* Media Queries
 **************************/
