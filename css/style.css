@@ -249,13 +249,15 @@ nav {
   text-decoration: none;
   transition: 0.3s ease-out;
   border: 0px;
-  border-radius: 0.75rem; }
+  border-radius: 0.75rem;
+  height: 100%; }
 
 .card-img-top {
   opacity: 0.8;
   transition: 0.3s ease-out;
   border-top-left-radius: 0.75rem;
-  border-top-right-radius: 0.75rem; }
+  border-top-right-radius: 0.75rem;
+  height: 14rem; }
 
 .card-link:hover,
 .card:hover {
@@ -274,7 +276,16 @@ nav {
 .card-body {
   border-bottom-left-radius: 0.75rem;
   border-bottom-right-radius: 0.75rem;
-  background-color: #0169AB; }
+  background-color: #0169AB;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.pwp {
+  height: 22rem; }
+
+.wp {
+  height: 16rem; }
 
 /* Media Queries
 **************************/
@@ -317,6 +328,12 @@ nav {
     display: none; }
 
   .photo-r {
-    display: block; } }
+    display: block; }
+
+  .pwp {
+    height: 14rem; }
+
+  .wp {
+    height: 14rem; } }
 
 /*# sourceMappingURL=style.css.map */

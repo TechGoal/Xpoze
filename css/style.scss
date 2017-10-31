@@ -354,6 +354,7 @@ nav {
     transition: 0.3s ease-out;
     border: 0px;
     border-radius: 0.75rem;
+    height: 100%;
 }
 
 .card-img-top {
@@ -361,6 +362,7 @@ nav {
     transition: 0.3s ease-out;
     border-top-left-radius: 0.75rem;
     border-top-right-radius: 0.75rem;
+    height: 14rem;
 }
 
 .card-link:hover,
@@ -385,6 +387,17 @@ nav {
     border-bottom-left-radius: 0.75rem;
     border-bottom-right-radius: 0.75rem;
     background-color: $blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pwp {
+    height: 22rem;
+}
+
+.wp {
+    height: 16rem;
 }
 
 /* Media Queries
@@ -444,5 +457,13 @@ nav {
 
     .photo-r {
         display: block;
+    }
+
+    .pwp {
+        height: 14rem;
+    }
+
+    .wp {
+        height: 14rem;
     }
 }
