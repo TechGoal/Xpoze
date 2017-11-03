@@ -298,6 +298,82 @@ h1 {
     display: none;
 }
 
+.form {
+    input,
+    textarea {
+        padding: 10px 15px;
+        width: 100%;
+        margin-bottom: 6px;
+        border: 2px solid $white;
+        transition: 0.3s ease-out;
+        outline: none;
+        resize: none;
+        background-color: $white;
+    }
+
+    input:focus,
+    textarea:focus,
+    input:hover,
+    textarea:hover {
+        border: 2px solid $blue;
+        opacity: 1;
+    }
+
+    .get-started {
+        color: $white;
+        background-color: $blue;        
+        border: 2px solid $blue;
+        cursor: pointer;
+    }
+}
+
+.social-c {
+    color: $white;
+    transition: 0.5s ease-out;
+    text-decoration: none;
+    text-align: center;
+}
+
+.social-c:hover {
+    color: #a5a5a5;
+    text-decoration: none;
+}
+
+.fa-c {
+    padding: 10px;
+    border-radius: 100%;
+    width: 37px;
+    height: 37px;
+    color: $white;
+    margin-bottom: 10px;
+}
+
+.fa-c.fa-facebook {
+    background-color: #3b5999;
+}
+
+.fa-c.fa-twitter {
+    background-color: #55acee;
+}
+
+.fa-c.fa-instagram {
+    background-color: #e4405f;
+}
+
+.fa-c.fa-youtube {
+    background-color: #cd201f;
+}
+
+.fa-phone {
+    padding: 10px;
+    border-radius: 100%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background-color: $blue;
+    color: $white;
+}
+
 /* Animate Background Image */
 
 @-webkit-keyframes aitf {
