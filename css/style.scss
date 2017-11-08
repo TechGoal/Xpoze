@@ -364,14 +364,15 @@ h1 {
     background-color: #cd201f;
 }
 
-.fa-phone {
-    padding: 10px;
-    border-radius: 100%;
-    text-align: center;
-    width: 40px;
-    height: 40px;
-    background-color: $blue;
+.phone-no {
+    text-decoration: none;
     color: $white;
+    transition: 0.3s ease-out;
+}
+
+.phone-no:hover {
+    text-decoration: none;
+    color: darkgray;
 }
 
 /* Animate Background Image */
