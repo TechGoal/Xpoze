@@ -4,4 +4,4 @@
 [![Developed By: Dhruvik Neharia](https://img.shields.io/badge/Developed%20By-Dhruvik%20Neharia-red.svg)](http://www.dhruvikneharia.in)
 
 
-Website for Xpoze [www.xpoze.co.in](http://xpoze.co.in/).
+Website for Xpoze [www.xpoze.co.in](http://xpoze.co.in/)
